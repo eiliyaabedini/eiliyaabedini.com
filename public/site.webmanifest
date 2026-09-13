@@ -1,0 +1,10 @@
+{
+  "name": "Eiliya Abedini",
+  "short_name": "Eiliya",
+  "description": "Senior Android Engineer, AI Builder, and Creator.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0d0f0e",
+  "theme_color": "#0d0f0e",
+  "icons": [{ "src": "/assets/favicon.svg", "sizes": "any", "type": "image/svg+xml" }]
+}

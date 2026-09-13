@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <radialGradient id="glow" cx="75%" cy="28%" r="55%">
+      <stop offset="0" stop-color="#ff5c35" stop-opacity=".28"/>
+      <stop offset="1" stop-color="#0d0f0e" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="64" height="64" patternUnits="userSpaceOnUse">
+      <path d="M64 0H0V64" fill="none" stroke="#f1eee6" stroke-opacity=".055"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="#0d0f0e"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <circle cx="1050" cy="560" r="330" fill="none" stroke="#f1eee6" stroke-opacity=".12"/>
+  <circle cx="1050" cy="560" r="205" fill="none" stroke="#f1eee6" stroke-opacity=".12"/>
+  <circle cx="884" cy="368" r="8" fill="#d8ff66"/>
+  <circle cx="77" cy="72" r="27" fill="none" stroke="#f1eee6"/>
+  <text x="77" y="78" fill="#f1eee6" font-family="Arial, sans-serif" font-size="13" font-weight="700" text-anchor="middle">EA</text>
+  <text x="122" y="78" fill="#f1eee6" font-family="Arial, sans-serif" font-size="17" font-weight="700" letter-spacing="1.2">EILIYA ABEDINI</text>
+  <text x="72" y="235" fill="#f1eee6" font-family="Georgia, serif" font-size="86" letter-spacing="-4">Mobile craft.</text>
+  <text x="72" y="325" fill="#f1eee6" font-family="Georgia, serif" font-size="86" letter-spacing="-4">AI curiosity.</text>
+  <text x="72" y="415" fill="#ff5c35" font-family="Georgia, serif" font-size="86" font-style="italic" letter-spacing="-4">Human products.</text>
+  <text x="76" y="520" fill="#f1eee6" fill-opacity=".62" font-family="Arial, sans-serif" font-size="19" font-weight="600" letter-spacing="2">SENIOR ANDROID ENGINEER  ·  AI BUILDER  ·  CREATOR</text>
+  <rect x="76" y="555" width="158" height="4" rx="2" fill="#d8ff66"/>
+</svg>
