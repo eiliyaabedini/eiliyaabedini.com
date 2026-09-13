@@ -2,8 +2,11 @@
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "eiliyaabedini-com",
   "compatibility_date": "2026-09-13",
+  "main": "./src/worker.js",
   "assets": {
     "directory": "./public",
+    "binding": "ASSETS",
+    "run_worker_first": ["/", "/index.html"],
     "not_found_handling": "404-page"
   }
 }

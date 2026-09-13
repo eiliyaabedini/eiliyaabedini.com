@@ -2,10 +2,12 @@
 
 The bilingual personal website of [Eiliya Abedini](https://eiliyaabedini.com) — Senior Android Engineer, AI Builder, and Creator.
 
-- `/en/` — English engineering portfolio
+- `/` — English engineering portfolio by default
+- `/en/` — explicit English route
 - `/fa/` — Persian creator-first portfolio
 - `/links/` — compact bilingual social link hub
-- `/` — remembers or infers the visitor's language, with a visible manual choice
+
+Cloudflare serves the English portfolio directly at `/` and redirects visitors from Iran to `/fa/` using request-country metadata. The explicit language routes always remain available.
 
 ## Local development
 
@@ -14,7 +16,7 @@ npm install
 npm run dev
 ```
 
-The site is intentionally built with semantic HTML, modern CSS, and a small amount of vanilla JavaScript. There is no client framework or production JavaScript dependency.
+The site is intentionally built with semantic HTML, modern CSS, a small amount of vanilla JavaScript, and a minimal Cloudflare Worker for country-aware root routing. There is no client framework or production JavaScript dependency.
 
 ## Deployment
 
@@ -24,7 +26,7 @@ The project is configured for [Cloudflare Workers Static Assets](https://develop
 npm run deploy
 ```
 
-The public site lives in `public/`. No secrets or environment variables are required.
+The public site lives in `public/`, with the edge-routing entry point in `src/worker.js`. No secrets or environment variables are required.
 
 ## License
 

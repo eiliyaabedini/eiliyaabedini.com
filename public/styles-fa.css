@@ -647,6 +647,26 @@ img {
   background: var(--fa-paper);
 }
 
+.fa-project--aua {
+  grid-column: 1 / -1;
+  min-height: 29rem;
+  background:
+    radial-gradient(circle at 15% 20%, rgba(255, 255, 255, 0.42), transparent 28%),
+    repeating-linear-gradient(90deg, transparent 0 3.95rem, rgba(17, 18, 15, 0.07) 4rem),
+    var(--fa-lilac);
+}
+
+.fa-project--aua::after {
+  content: "AUA / #12 / TAP / OBSERVE / VERIFY";
+  position: absolute;
+  bottom: 1.8rem;
+  left: 5.8rem;
+  color: rgba(17, 18, 15, 0.35);
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: clamp(0.58rem, 1vw, 0.72rem);
+  letter-spacing: 0.08em;
+}
+
 .fa-project__top {
   display: flex;
   align-items: center;
@@ -1162,6 +1182,17 @@ img {
 
   .fa-project {
     min-height: 24rem;
+  }
+
+  .fa-project--aua {
+    grid-column: auto;
+    min-height: 27rem;
+  }
+
+  .fa-project--aua::after {
+    right: 1.5rem;
+    bottom: 1.9rem;
+    left: auto;
   }
 
   .fa-project h3 {

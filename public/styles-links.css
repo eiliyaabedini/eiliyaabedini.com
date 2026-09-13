@@ -279,6 +279,19 @@ img {
   font-size: 0.8rem;
 }
 
+.link-card--aua {
+  border-color: rgba(216, 255, 102, 0.28);
+  background: linear-gradient(105deg, rgba(216, 255, 102, 0.1), rgba(184, 155, 255, 0.08));
+}
+
+.link-icon--aua {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: var(--ink);
+  font-size: 0.62rem;
+  letter-spacing: -0.03em;
+}
+
 .link-icon--iact {
   border-color: var(--accent);
   background: var(--accent);
