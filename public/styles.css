@@ -51,6 +51,7 @@ a {
 
 img {
   display: block;
+  height: auto;
   max-width: 100%;
 }
 

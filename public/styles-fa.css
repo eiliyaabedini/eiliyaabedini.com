@@ -72,6 +72,7 @@ a {
 
 img {
   display: block;
+  height: auto;
   max-width: 100%;
 }
 
@@ -351,6 +352,7 @@ img {
   aspect-ratio: 0.92;
   border-radius: 1.8rem 9rem 1.8rem 1.8rem;
   object-fit: cover;
+  object-position: center 30%;
   filter: saturate(0.86) contrast(1.02);
 }
 

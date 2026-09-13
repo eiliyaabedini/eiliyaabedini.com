@@ -56,6 +56,7 @@ a {
 
 img {
   display: block;
+  height: auto;
   max-width: 100%;
 }
 
@@ -124,9 +125,11 @@ img {
 }
 
 .links-avatar img {
+  width: 100%;
   aspect-ratio: 1;
   border-radius: 50%;
   object-fit: cover;
+  object-position: center 24%;
 }
 
 .links-avatar span {
