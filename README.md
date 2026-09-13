@@ -1,6 +1,11 @@
 # eiliyaabedini.com
 
-The personal website of [Eiliya Abedini](https://eiliyaabedini.com) — Senior Android Engineer, AI Builder, and Creator.
+The bilingual personal website of [Eiliya Abedini](https://eiliyaabedini.com) — Senior Android Engineer, AI Builder, and Creator.
+
+- `/en/` — English engineering portfolio
+- `/fa/` — Persian creator-first portfolio
+- `/links/` — compact bilingual social link hub
+- `/` — remembers or infers the visitor's language, with a visible manual choice
 
 ## Local development
 

@@ -30,6 +30,10 @@ document.querySelectorAll("[data-year]").forEach((year) => {
   year.textContent = String(new Date().getFullYear());
 });
 
+document.querySelectorAll("[data-language]").forEach((link) => {
+  link.addEventListener("click", () => localStorage.setItem("ea_language", link.dataset.language));
+});
+
 if (reduceMotion.matches || !("IntersectionObserver" in window)) {
   document.querySelectorAll(".reveal").forEach((element) => element.classList.add("is-visible"));
 } else {
