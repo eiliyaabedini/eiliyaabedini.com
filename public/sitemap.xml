@@ -16,6 +16,11 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://eiliyaabedini.com/en/work/android-ui-analyser/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://eiliyaabedini.com/en/content/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -32,6 +37,11 @@
   </url>
   <url>
     <loc>https://eiliyaabedini.com/fa/work/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://eiliyaabedini.com/fa/work/android-ui-analyser/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
