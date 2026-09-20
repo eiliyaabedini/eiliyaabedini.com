@@ -1,12 +1,12 @@
 # eiliyaabedini.com
 
-The bilingual personal website of [Eiliya Abedini](https://eiliyaabedini.com) — Senior Android Engineer, AI Builder, and Creator.
+The bilingual personal website of [Eiliya Abedini](https://eiliyaabedini.com), a Senior Android Engineer who builds AI tools and Persian technology content.
 
-- `/` and `/en/` — English home
-- `/en/experience/`, `/en/work/`, `/en/content/` — English résumé, projects, and content
-- `/fa/` — Persian home
-- `/fa/experience/`, `/fa/work/`, `/fa/content/` — Persian résumé, projects, and content
-- `/links/` — compact bilingual link hub
+- `/` and `/en/`: English home
+- `/en/experience/`, `/en/work/`, `/en/content/`: English résumé, projects, and content
+- `/fa/`: Persian home
+- `/fa/experience/`, `/fa/work/`, `/fa/content/`: Persian résumé, projects, and content
+- `/links/`: compact bilingual link hub
 
 Cloudflare serves the English portfolio directly at `/` and redirects visitors from Iran to `/fa/` using request-country metadata. The explicit language routes always remain available.
 

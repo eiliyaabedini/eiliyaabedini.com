@@ -81,7 +81,7 @@ html[dir="rtl"] .home-hero h1 { max-width: 14ch; font-size: clamp(3rem,6.5vw,5.7
 .home-hero--visual .button--secondary { border-color: rgba(255,255,255,.55); color: #fff; }
 .home-hero--visual .button--secondary:hover { border-color: #fff; background: rgba(255,255,255,.1); }
 html[dir="rtl"] .home-hero--visual::after { background: linear-gradient(90deg,rgba(10,11,10,.98) 0%,rgba(13,13,12,.86) 41%,rgba(13,13,12,.18) 68%,rgba(13,13,12,.03) 100%); }
-html[dir="rtl"] .home-hero--visual > div { direction: rtl; justify-self: start; text-align: right; }
+html[dir="rtl"] .home-hero--visual > div { direction: rtl; justify-self: left; text-align: right; }
 .current-role { display: grid; grid-template-columns: .34fr 1fr auto; gap: 2rem; align-items: baseline; padding-block: 1.45rem; border-top: 1px solid var(--line-strong); border-bottom: 1px solid var(--line); }
 .current-role span { color: var(--quiet); font-size: .7rem; font-weight: 680; text-transform: uppercase; }
 .current-role strong { font-size: 1rem; font-weight: 650; }
