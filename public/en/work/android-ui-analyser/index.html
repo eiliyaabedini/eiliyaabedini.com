@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#f5f4f0" />
-    <meta name="description" content="Android UI Analyser is an open-source CLI and MCP tool by Eiliya Abedini that helps AI agents understand, navigate, and test mobile apps." />
+    <meta name="description" content="Android UI Analyser is an open-source testing harness by Eiliya Abedini that helps AI agents build, run, inspect, and verify Android apps." />
     <link rel="canonical" href="https://eiliyaabedini.com/en/work/android-ui-analyser/" />
     <link rel="alternate" hreflang="en" href="https://eiliyaabedini.com/en/work/android-ui-analyser/" />
     <link rel="alternate" hreflang="fa" href="https://eiliyaabedini.com/fa/work/android-ui-analyser/" />
@@ -13,12 +13,12 @@
     <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
     <meta property="og:type" content="article" />
     <meta property="og:title" content="Android UI Analyser | Eiliya Abedini" />
-    <meta property="og:description" content="A hierarchy-first mobile UI testing tool built for AI agents." />
+    <meta property="og:description" content="A purpose-built Android testing harness that closes the loop between agent coding and verification." />
     <meta property="og:image" content="https://eiliyaabedini.com/assets/og-image-v2.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <title>Android UI Analyser | Eiliya Abedini</title>
-    <link rel="stylesheet" href="/styles.css?v=20260920" />
+    <link rel="stylesheet" href="/styles.css?v=20260920-3" />
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -30,8 +30,8 @@
         <div class="case-study-hero__grid">
           <h1>Android UI<br />Analyser</h1>
           <div class="case-study-hero__intro">
-            <p class="eyebrow">Mobile testing infrastructure for AI agents</p>
-            <p class="case-study-hero__lead">AUA helps AI agents understand, navigate, and test mobile apps without relying on a loop of screenshots and guessed coordinates.</p>
+            <p class="eyebrow">Closing the Android development loop for AI agents</p>
+            <p class="case-study-hero__lead">AUA gives an agent the tools to inspect, control, and verify the Android app it has just changed. Its purpose is to let the agent carry its own work through testing.</p>
             <div class="actions"><a class="button button--primary" href="https://github.com/The-Wordlab/Android-UI-Analyser" target="_blank" rel="noreferrer">Explore on GitHub ↗</a><a class="button button--secondary" href="https://lnkd.in/p/eKyV2Mtb" target="_blank" rel="noreferrer">Read the launch post ↗</a></div>
           </div>
         </div>
@@ -43,8 +43,22 @@
         </dl>
       </header>
 
-      <section class="case-study-section case-study-overview" aria-labelledby="overview-title">
-        <div><span class="section-index">01</span><h2 id="overview-title">The problem</h2></div>
+      <section class="case-study-section case-study-overview" aria-labelledby="vision-title">
+        <div><span class="section-index">01</span><h2 id="vision-title">Close the loop</h2></div>
+        <div class="case-study-copy">
+          <p class="case-study-copy__lead">I built AUA around one question: how can an agent test the Android app it has just changed without handing verification back to a person?</p>
+          <p>ADB exposes useful commands, but it was not a dependable testing interface for an agent. UI actions failed, app state was difficult to read, and screenshot-driven workflows kept spending calls and tokens to rediscover the same screen.</p>
+          <p>I kept the repeatable parts of testing function-driven. AUA combines related operations into one call and gives the agent a purpose-built harness and interaction model. The agent decides what to test, while the harness handles mechanics that should be deterministic.</p>
+          <p>The same harness can control the conditions around the app through proxy tools, network mocking, crash evidence, and guarded database operations. The agent can create the state a test needs, exercise the real app, inspect the result, and choose the next step.</p>
+          <div class="agent-loop" dir="ltr" aria-label="Closed agent development loop: code, build, run, test, inspect, fix, and repeat">
+            <span>Code</span><i aria-hidden="true">→</i><span>Build</span><i aria-hidden="true">→</i><span>Run</span><i aria-hidden="true">→</i><span>Test</span><i aria-hidden="true">→</i><span>Inspect</span><i aria-hidden="true">→</i><span>Fix</span><i aria-hidden="true">↺</i>
+          </div>
+          <p class="agent-loop__caption">The same agent can move from a code change to evidence that the app behaves as intended.</p>
+        </div>
+      </section>
+
+      <section class="case-study-section" aria-labelledby="overview-title">
+        <div><span class="section-index">02</span><h2 id="overview-title">The problem</h2></div>
         <div class="case-study-copy">
           <p class="case-study-copy__lead">A mobile agent needs two things on every step: a dependable view of the current screen and a safe way to act on it.</p>
           <p>The usual screenshot-first loop is expensive and fragile. The agent has to process an image, infer where a control sits, tap raw coordinates, wait, and take another screenshot. As the flow gets longer, the same visual context is processed again and again.</p>
@@ -53,7 +67,7 @@
       </section>
 
       <section class="case-study-section" aria-labelledby="approach-title">
-        <div><span class="section-index">02</span><h2 id="approach-title">How it works</h2></div>
+        <div><span class="section-index">03</span><h2 id="approach-title">How it works</h2></div>
         <div>
           <div class="aua-flow" aria-label="AUA workflow">
             <article><span>01</span><h3>Read the hierarchy</h3><p>Inspect accessibility and view data first, returning element IDs, types, text, states, and bounds.</p></article>
@@ -78,17 +92,17 @@
       </section>
 
       <section class="case-study-section" aria-labelledby="beyond-title">
-        <div><span class="section-index">03</span><h2 id="beyond-title">Beyond a single test</h2></div>
+        <div><span class="section-index">04</span><h2 id="beyond-title">Beyond a single test</h2></div>
         <div class="capability-grid">
           <article><h3>Parallel execution</h3><p>Automatic device selection and leasing let multiple agents test without competing for the same target.</p></article>
           <article><h3>Reusable knowledge</h3><p>Flows, screen maps, routes, transitions, and app memory let future agents reuse paths that have already been discovered.</p></article>
-          <article><h3>Evidence and control</h3><p>Goal-based testing, semantic assertions, screenshots, recordings, crash evidence, network mocking, and guarded database operations.</p></article>
+          <article><h3>Test the real conditions</h3><p>Proxy control, network mocking, crash evidence, screenshots, recordings, and guarded database operations give an agent the state and evidence a real test needs.</p></article>
           <article><h3>Agent-ready access</h3><p>A CLI, MCP server, and plugins for Codex and Claude Code make the same operating model available in different workflows.</p></article>
         </div>
       </section>
 
       <section class="case-study-section case-study-in-use" aria-labelledby="use-title">
-        <div><span class="section-index">04</span><h2 id="use-title">In use</h2></div>
+        <div><span class="section-index">05</span><h2 id="use-title">In use</h2></div>
         <div class="case-study-copy">
           <p class="case-study-copy__lead">AUA began as a response to a delivery problem at Luzia and later became open source.</p>
           <p>The Luzia Android team uses it to check features after implementation and before release. It can also run agent-driven QA scenarios in parallel. The team’s early testing and feedback shaped the tool, and outside contributors now help develop it.</p>

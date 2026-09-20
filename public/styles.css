@@ -268,6 +268,10 @@ html[dir="rtl"] .case-study-section h2 { font-weight: 720; letter-spacing: -.035
 .case-study-copy p:first-child { margin-top: 0; }
 .case-study-copy .case-study-copy__lead { max-width: 43rem; color: var(--ink); font-size: clamp(1.35rem,2.5vw,2rem); font-weight: 530; letter-spacing: -.035em; line-height: 1.38; }
 html[dir="rtl"] .case-study-copy .case-study-copy__lead { font-weight: 650; letter-spacing: -.025em; line-height: 1.65; }
+.agent-loop { display: flex; align-items: center; gap: .65rem; margin-top: 2.2rem; padding: 1.25rem; overflow-x: auto; border: 1px solid var(--line); background: var(--surface); scrollbar-width: thin; scrollbar-color: var(--line-strong) transparent; }
+.agent-loop span { flex: 0 0 auto; padding: .65rem .9rem; border: 1px solid var(--line-strong); border-radius: 999px; background: var(--bg); font-size: .7rem; font-weight: 720; }
+.agent-loop i { flex: none; color: var(--accent); font-size: .9rem; font-style: normal; }
+.case-study-copy .agent-loop__caption { margin-top: .75rem; color: var(--quiet); font-size: .7rem; line-height: 1.6; }
 .aua-flow { display: grid; grid-template-columns: repeat(3,1fr); border-top: 1px solid var(--line-strong); }
 .aua-flow article { min-height: 16.5rem; padding: 1.2rem 1.25rem 1.5rem 0; border-bottom: 1px solid var(--line); }
 .aua-flow article + article { padding-left: 1.25rem; border-left: 1px solid var(--line); }

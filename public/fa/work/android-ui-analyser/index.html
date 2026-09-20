@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#f5f4f0" />
-    <meta name="description" content="Android UI Analyser ابزار متن‌باز ایلیا عابدینی است که به ایجنت‌های هوش مصنوعی برای درک، پیمایش و آزمودن اپ‌های موبایل کمک می‌کند." />
+    <meta name="description" content="Android UI Analyser بستر آزمون متن‌باز ایلیا عابدینی است که به ایجنت‌های هوش مصنوعی اجازه می‌دهد اپ اندروید را بسازند، اجرا کنند و نتیجه را خودشان بررسی کنند." />
     <link rel="canonical" href="https://eiliyaabedini.com/fa/work/android-ui-analyser/" />
     <link rel="alternate" hreflang="en" href="https://eiliyaabedini.com/en/work/android-ui-analyser/" />
     <link rel="alternate" hreflang="fa" href="https://eiliyaabedini.com/fa/work/android-ui-analyser/" />
@@ -13,12 +13,12 @@
     <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
     <meta property="og:type" content="article" />
     <meta property="og:title" content="Android UI Analyser | ایلیا عابدینی" />
-    <meta property="og:description" content="ابزاری ساختارمحور برای آزمودن رابط موبایل توسط ایجنت‌های هوش مصنوعی." />
+    <meta property="og:description" content="بستر اختصاصی تست اندروید برای بستن حلقه میان کدنویسی ایجنت و بررسی نتیجه." />
     <meta property="og:image" content="https://eiliyaabedini.com/assets/og-image-v2.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <title>Android UI Analyser | ایلیا عابدینی</title>
-    <link rel="stylesheet" href="/styles.css?v=20260920" />
+    <link rel="stylesheet" href="/styles.css?v=20260920-3" />
   </head>
   <body>
     <a class="skip-link" href="#main">&#x202B;رفتن به محتوای اصلی&#x202C;</a>
@@ -30,8 +30,8 @@
         <div class="case-study-hero__grid">
           <h1><bdi dir="ltr">Android UI<br />Analyser</bdi></h1>
           <div class="case-study-hero__intro">
-            <p class="eyebrow">&#x202B;زیرساخت آزمون اپ موبایل برای ایجنت‌های هوش مصنوعی&#x202C;</p>
-            <p class="case-study-hero__lead">&#x202B;<bdi dir="ltr">AUA</bdi> به ایجنت‌ها اجازه می‌دهد اپ‌های موبایل را بخوانند، کنترل کنند و تست کنند، بدون اینکه مدام اسکرین‌شات بگیرند و مختصات را حدس بزنند.&#x202C;</p>
+            <p class="eyebrow">&#x202B;بستن حلقه توسعه اندروید برای ایجنت‌های هوش مصنوعی&#x202C;</p>
+            <p class="case-study-hero__lead">&#x202B;<bdi dir="ltr">AUA</bdi> ابزارهایی را در اختیار ایجنت می‌گذارد تا اپ اندرویدی‌ای را که تغییر داده بخواند، کنترل کند و خودش نتیجه را بررسی کند. هدف این است که ایجنت کار را تا مرحله تست ادامه دهد.&#x202C;</p>
             <div class="actions"><a class="button button--primary" href="https://github.com/The-Wordlab/Android-UI-Analyser" target="_blank" rel="noreferrer">&#x202B;دیدن در <bdi dir="ltr">GitHub</bdi>&#x202C; ↗</a><a class="button button--secondary" href="https://lnkd.in/p/eKyV2Mtb" target="_blank" rel="noreferrer">&#x202B;خواندن پست معرفی&#x202C; ↗</a></div>
           </div>
         </div>
@@ -43,8 +43,22 @@
         </dl>
       </header>
 
-      <section class="case-study-section case-study-overview" aria-labelledby="overview-title">
-        <div><span class="section-index">۰۱</span><h2 id="overview-title">&#x202B;مسئله&#x202C;</h2></div>
+      <section class="case-study-section case-study-overview" aria-labelledby="vision-title">
+        <div><span class="section-index">۰۱</span><h2 id="vision-title">&#x202B;بستن حلقه&#x202C;</h2></div>
+        <div class="case-study-copy">
+          <p class="case-study-copy__lead">&#x202B;<bdi dir="ltr">AUA</bdi> را با یک سؤال ساختم: چطور ایجنت می‌تواند اپ اندرویدی‌ای را که تغییر داده خودش تست کند و برای بررسی نتیجه دوباره کار را به انسان برنگرداند؟&#x202C;</p>
+          <p>&#x202B;<bdi dir="ltr">ADB</bdi> فرمان‌های مفیدی دارد، اما به تنهایی رابط قابل اعتمادی برای تست ایجنتی نبود. عملیات رابط شکست می‌خورد، خواندن وضعیت اپ دشوار بود و جریان‌های مبتنی بر اسکرین‌شات برای دیدن دوباره همان صفحه، فراخوانی و توکن زیادی مصرف می‌کردند.&#x202C;</p>
+          <p>&#x202B;بخش‌های تکرارپذیر تست را تابع‌محور نگه داشتم. <bdi dir="ltr">AUA</bdi> عملیات مرتبط را در یک فراخوانی ترکیب می‌کند و یک بستر آزمون و مدل تعامل اختصاصی در اختیار ایجنت می‌گذارد. ایجنت تصمیم می‌گیرد چه چیزی را تست کند و بستر، کارهایی را انجام می‌دهد که باید قطعی و قابل تکرار باشند.&#x202C;</p>
+          <p>&#x202B;همین بستر می‌تواند با ابزارهای پروکسی، شبیه‌سازی شبکه، شواهد کرش و عملیات محافظت‌شده پایگاه داده، شرایط اطراف اپ را هم کنترل کند. ایجنت وضعیت لازم برای تست را می‌سازد، اپ واقعی را آزمایش می‌کند، نتیجه را می‌بیند و قدم بعدی را انتخاب می‌کند.&#x202C;</p>
+          <div class="agent-loop" dir="ltr" aria-label="حلقه بسته توسعه ایجنت: کد، ساخت، اجرا، تست، بررسی، اصلاح و تکرار">
+            <span dir="rtl">کد</span><i aria-hidden="true">→</i><span dir="rtl">ساخت</span><i aria-hidden="true">→</i><span dir="rtl">اجرا</span><i aria-hidden="true">→</i><span dir="rtl">تست</span><i aria-hidden="true">→</i><span dir="rtl">بررسی</span><i aria-hidden="true">→</i><span dir="rtl">اصلاح</span><i aria-hidden="true">↺</i>
+          </div>
+          <p class="agent-loop__caption">&#x202B;همان ایجنت می‌تواند از تغییر کد تا رسیدن به شواهدی از رفتار درست اپ پیش برود.&#x202C;</p>
+        </div>
+      </section>
+
+      <section class="case-study-section" aria-labelledby="overview-title">
+        <div><span class="section-index">۰۲</span><h2 id="overview-title">&#x202B;مسئله&#x202C;</h2></div>
         <div class="case-study-copy">
           <p class="case-study-copy__lead">&#x202B;ایجنت موبایل در هر مرحله به دو چیز نیاز دارد: تصویری قابل‌اعتماد از صفحه فعلی و راهی امن برای انجام عمل روی آن.&#x202C;</p>
           <p>&#x202B;روش متکی بر اسکرین‌شات هم پرهزینه است و هم شکننده. ایجنت باید تصویر را پردازش کند، محل کنترل را حدس بزند، مختصات خام را لمس کند، منتظر بماند و دوباره اسکرین‌شات بگیرد. با طولانی‌شدن جریان، همان اطلاعات تصویری بارها پردازش می‌شود.&#x202C;</p>
@@ -53,7 +67,7 @@
       </section>
 
       <section class="case-study-section" aria-labelledby="approach-title">
-        <div><span class="section-index">۰۲</span><h2 id="approach-title">&#x202B;روش کار&#x202C;</h2></div>
+        <div><span class="section-index">۰۳</span><h2 id="approach-title">&#x202B;روش کار&#x202C;</h2></div>
         <div>
           <div class="aua-flow" aria-label="مراحل کار Android UI Analyser">
             <article><span>۰۱</span><h3>&#x202B;خواندن ساختار صفحه&#x202C;</h3><p>&#x202B;ابتدا داده‌های دسترس‌پذیری و نمای صفحه را می‌خواند و شناسه، نوع، متن، وضعیت و محدوده عناصر را برمی‌گرداند.&#x202C;</p></article>
@@ -78,17 +92,17 @@
       </section>
 
       <section class="case-study-section" aria-labelledby="beyond-title">
-        <div><span class="section-index">۰۳</span><h2 id="beyond-title">&#x202B;فراتر از یک تست&#x202C;</h2></div>
+        <div><span class="section-index">۰۴</span><h2 id="beyond-title">&#x202B;فراتر از یک تست&#x202C;</h2></div>
         <div class="capability-grid">
           <article><h3>&#x202B;اجرای موازی&#x202C;</h3><p>&#x202B;انتخاب و رزرو خودکار دستگاه اجازه می‌دهد چند ایجنت هم‌زمان تست کنند، بدون اینکه سر یک دستگاه با هم تداخل داشته باشند.&#x202C;</p></article>
           <article><h3>&#x202B;دانش قابل استفاده دوباره&#x202C;</h3><p>&#x202B;جریان‌ها، نقشه صفحه‌ها، مسیرها، انتقال‌ها و حافظه اپ باعث می‌شوند ایجنت‌های بعدی راه کشف‌شده را از نو پیدا نکنند.&#x202C;</p></article>
-          <article><h3>&#x202B;شواهد و کنترل&#x202C;</h3><p>&#x202B;آزمون هدف‌محور، بررسی معنایی، اسکرین‌شات، ضبط، شواهد کرش، شبیه‌سازی شبکه و عملیات محافظت‌شده پایگاه داده.&#x202C;</p></article>
+          <article><h3>&#x202B;تست در شرایط واقعی&#x202C;</h3><p>&#x202B;کنترل پروکسی، شبیه‌سازی شبکه، شواهد کرش، اسکرین‌شات، ضبط و عملیات محافظت‌شده پایگاه داده، وضعیت و شواهد لازم برای یک تست واقعی را در اختیار ایجنت می‌گذارند.&#x202C;</p></article>
           <article><h3>&#x202B;دسترسی مناسب ایجنت&#x202C;</h3><p>&#x202B;<bdi dir="ltr">CLI</bdi>، سرور <bdi dir="ltr">MCP</bdi> و افزونه‌های <bdi dir="ltr">Codex</bdi> و <bdi dir="ltr">Claude Code</bdi> یک مدل کاری مشترک را در محیط‌های مختلف در دسترس می‌گذارند.&#x202C;</p></article>
         </div>
       </section>
 
       <section class="case-study-section case-study-in-use" aria-labelledby="use-title">
-        <div><span class="section-index">۰۴</span><h2 id="use-title">&#x202B;استفاده در عمل&#x202C;</h2></div>
+        <div><span class="section-index">۰۵</span><h2 id="use-title">&#x202B;استفاده در عمل&#x202C;</h2></div>
         <div class="case-study-copy">
           <p class="case-study-copy__lead">&#x202B;<bdi dir="ltr">AUA</bdi> برای حل یک مشکل واقعی در فرایند توسعه <bdi dir="ltr">Luzia</bdi> شروع شد و بعد به پروژه‌ای متن‌باز تبدیل شد.&#x202C;</p>
           <p>&#x202B;تیم اندروید <bdi dir="ltr">Luzia</bdi> با آن قابلیت‌ها را بعد از پیاده‌سازی و پیش از انتشار بررسی می‌کند. این ابزار سناریوهای کنترل کیفیت ایجنتی را هم به شکل موازی اجرا می‌کند. تست و بازخورد اولیه تیم به شکل‌گیری ابزار کمک کرد و حالا مشارکت‌کننده‌های بیرونی هم در توسعه آن نقش دارند.&#x202C;</p>
