@@ -62,7 +62,7 @@ html[dir="rtl"] .home-hero h1 { max-width: 14ch; font-size: clamp(3rem,6.5vw,5.7
 .portrait img { width: 100%; aspect-ratio: .78; border-radius: .35rem; object-fit: cover; object-position: center 26%; filter: saturate(.82) contrast(1.02); }
 .portrait figcaption { display: flex; justify-content: space-between; gap: 1rem; margin-top: .75rem; color: var(--quiet); font-size: .67rem; }
 .home-hero--visual { position: relative; isolation: isolate; grid-template-columns: 1fr; min-height: min(44rem,calc(100svh - 6.5rem)); margin-block: clamp(.8rem,2vw,1.5rem); overflow: hidden; border-radius: .45rem; background: #61717b url("/assets/hero-beach-background-v2.webp") center/cover no-repeat; color: #fff; }
-.home-hero--visual::before { content: ""; position: absolute; z-index: -1; inset: 0; background: url("/assets/photoshoot-74-original.jpg") calc(100% + 4.5rem) 45%/auto 145% no-repeat; -webkit-mask-image: linear-gradient(90deg,transparent 49%,rgba(0,0,0,.12) 55%,rgba(0,0,0,.6) 64%,#000 74%); mask-image: linear-gradient(90deg,transparent 49%,rgba(0,0,0,.12) 55%,rgba(0,0,0,.6) 64%,#000 74%); }
+.home-hero--visual::before { content: ""; position: absolute; z-index: -1; inset: 0; background: url("/assets/photoshoot-74-original.jpg") calc(100% + 4.5rem) 45%/auto 145% no-repeat; -webkit-mask-image: linear-gradient(90deg,transparent 49%,rgba(0,0,0,.35) 54%,#000 61%); mask-image: linear-gradient(90deg,transparent 49%,rgba(0,0,0,.35) 54%,#000 61%); }
 .home-hero--visual::after { content: ""; position: absolute; z-index: -1; inset: 0; background: linear-gradient(90deg,rgba(10,11,10,.98) 0%,rgba(13,13,12,.86) 41%,rgba(13,13,12,.18) 68%,rgba(13,13,12,.03) 100%); }
 .home-hero--visual > div { width: min(45rem,58%); }
 .home-hero--visual .eyebrow { color: #d9ff5a; }
