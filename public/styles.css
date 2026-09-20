@@ -60,7 +60,8 @@ html[dir="rtl"] .home-hero h1 { max-width: 14ch; font-size: clamp(3rem,6.5vw,5.7
 .portrait { position: relative; margin: 0; }
 .portrait img { width: 100%; aspect-ratio: .78; border-radius: .35rem; object-fit: cover; object-position: center 26%; filter: saturate(.82) contrast(1.02); }
 .portrait figcaption { display: flex; justify-content: space-between; gap: 1rem; margin-top: .75rem; color: var(--quiet); font-size: .67rem; }
-.home-hero--visual { position: relative; isolation: isolate; grid-template-columns: 1fr; min-height: min(44rem,calc(100svh - 6.5rem)); margin-block: clamp(.8rem,2vw,1.5rem); overflow: hidden; border-radius: .45rem; background: #111 url("/assets/og-portrait-background.webp") center/cover no-repeat; color: #fff; }
+.home-hero--visual { position: relative; isolation: isolate; grid-template-columns: 1fr; min-height: min(44rem,calc(100svh - 6.5rem)); margin-block: clamp(.8rem,2vw,1.5rem); overflow: hidden; border-radius: .45rem; background: #61717b url("/assets/hero-beach-background-v2.webp") center/cover no-repeat; color: #fff; }
+.home-hero--visual::before { content: ""; position: absolute; z-index: -1; inset: 0; background: url("/assets/photoshoot-74-original.jpg") calc(100% + 4.5rem) 45%/auto 145% no-repeat; -webkit-mask-image: linear-gradient(90deg,transparent 49%,rgba(0,0,0,.12) 55%,rgba(0,0,0,.6) 64%,#000 74%); mask-image: linear-gradient(90deg,transparent 49%,rgba(0,0,0,.12) 55%,rgba(0,0,0,.6) 64%,#000 74%); }
 .home-hero--visual::after { content: ""; position: absolute; z-index: -1; inset: 0; background: linear-gradient(90deg,rgba(10,11,10,.98) 0%,rgba(13,13,12,.86) 41%,rgba(13,13,12,.18) 68%,rgba(13,13,12,.03) 100%); }
 .home-hero--visual > div { width: min(45rem,58%); }
 .home-hero--visual .eyebrow { color: #d9ff5a; }
@@ -374,6 +375,7 @@ html[dir="rtl"] .project-cta h2 { font-weight: 720; letter-spacing: -.04em; line
   .home-hero h1 { max-width: 10ch; font-size: clamp(2.75rem,12vw,3.65rem); overflow-wrap: break-word; }
   html[dir="rtl"] .home-hero h1 { max-width: 13ch; font-size: clamp(2.65rem,11vw,3.5rem); }
   .home-hero--visual { display: grid; min-height: 48rem; margin-top: .75rem; padding-block: 21rem 3rem; background-position: 88% center; }
+  .home-hero--visual::before { background-position: 50% 26%; background-size: cover; -webkit-mask-image: none; mask-image: none; }
   .home-hero--visual::after, html[dir="rtl"] .home-hero--visual::after { background: linear-gradient(180deg,rgba(10,11,10,.02) 0%,rgba(10,11,10,.18) 28%,rgba(10,11,10,.94) 55%,#0a0b0a 100%); }
   .home-hero--visual > div { width: 100%; align-self: end; }
   .home-hero--visual h1, html[dir="rtl"] .home-hero--visual h1 { max-width: 11ch; font-size: clamp(2.55rem,11vw,3.45rem); }
