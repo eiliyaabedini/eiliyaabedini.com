@@ -1,19 +1,9 @@
 @font-face {
-  font-family: "Vazirmatn";
-  src: url("/assets/vazirmatn-arabic.woff2") format("woff2");
+  font-family: "Estedad";
+  src: url("/assets/estedad-variable.woff2") format("woff2");
   font-style: normal;
-  font-weight: 300 900;
+  font-weight: 100 900;
   font-display: swap;
-  unicode-range: U+0600-06FF, U+0750-077F, U+08A0-08FF, U+FB50-FDFF, U+FE70-FEFF;
-}
-
-@font-face {
-  font-family: "Vazirmatn";
-  src: url("/assets/vazirmatn-latin.woff2") format("woff2");
-  font-style: normal;
-  font-weight: 300 900;
-  font-display: swap;
-  unicode-range: U+0000-00FF;
 }
 
 :root {
@@ -33,7 +23,7 @@
 *, *::before, *::after { box-sizing: border-box; }
 html { scroll-behavior: smooth; text-rendering: optimizeLegibility; }
 body { min-width: 320px; margin: 0; overflow-x: hidden; background: var(--bg); color: var(--ink); font-family: var(--sans); -webkit-font-smoothing: antialiased; }
-html[dir="rtl"] body { font-family: "Vazirmatn", Tahoma, Arial, sans-serif; }
+html[dir="rtl"] body { font-family: "Estedad", Tahoma, Arial, sans-serif; font-weight: 450; }
 a { color: inherit; text-decoration: none; }
 img { display: block; max-width: 100%; height: auto; }
 button { color: inherit; font: inherit; }
