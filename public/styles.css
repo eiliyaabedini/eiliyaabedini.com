@@ -89,6 +89,7 @@ html[dir="rtl"] .home-hero--visual > div { direction: rtl; justify-self: left; t
 
 .home-section { padding-block: clamp(5rem,9vw,8rem); }
 .home-section + .home-section { border-top: 1px solid var(--line); }
+.home-section--career { padding-top: clamp(4rem,7vw,6rem); }
 .section-heading { display: grid; grid-template-columns: .34fr 1fr auto; gap: 2rem; align-items: start; margin-bottom: clamp(2.7rem,6vw,5rem); }
 .section-heading > span { color: var(--quiet); font-size: .68rem; font-weight: 700; text-transform: uppercase; }
 .section-heading h2, .page-hero h1 { margin: 0; font-size: clamp(2.25rem,4.4vw,4.2rem); font-weight: 590; letter-spacing: -.055em; line-height: 1; }
@@ -132,15 +133,11 @@ html[dir="rtl"] .focus-item + .focus-item { padding-right: 1.5rem; padding-left:
 .career-simple__history:hover .career-simple__dots i { background: var(--accent); transform: translateX(-.08rem); }
 .career-simple__history strong, .career-simple__role strong { display: block; margin-top: 1.05rem; color: var(--ink); font-size: .84rem; font-weight: 700; }
 .career-simple__history small, .career-simple__role time { display: block; margin-top: .3rem; color: var(--quiet); font-size: .66rem; line-height: 1.4; }
-.career-simple__logo { display: grid; width: 7.7rem; height: 7.7rem; place-items: center; border: .55rem solid var(--bg); border-radius: 50%; box-shadow: inset 0 0 0 1px rgba(23,23,23,.06); }
+.career-simple__logo { display: grid; width: 7.7rem; height: 7.7rem; place-items: center; border: .55rem solid var(--bg); border-radius: 50%; background: #fff; box-shadow: inset 0 0 0 1px rgba(23,23,23,.1); }
 .career-simple__logo img { width: auto; max-width: 42%; height: auto; max-height: 42%; }
-.career-simple__role--xing .career-simple__logo { background: #d9eeec; }
 .career-simple__role--xing .career-simple__logo img { max-width: 38%; max-height: 38%; }
-.career-simple__role--bitpanda .career-simple__logo { background: #d7f5e7; }
 .career-simple__role--bitpanda .career-simple__logo img { max-width: 31%; max-height: 42%; }
-.career-simple__role--revolut .career-simple__logo { background: #e2e5ff; }
 .career-simple__role--revolut .career-simple__logo img { max-width: 34%; max-height: 34%; }
-.career-simple__role--luzia .career-simple__logo { background: #f5d66f; }
 .career-simple__role--luzia .career-simple__logo img { max-width: 62%; max-height: 42%; }
 
 .content-callout { display: grid; grid-template-columns: minmax(0,.82fr) minmax(20rem,1.18fr); gap: clamp(2.5rem,7vw,6rem); align-items: center; }
